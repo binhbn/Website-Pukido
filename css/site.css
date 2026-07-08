@@ -145,9 +145,10 @@ h2.title{font-size:var(--fs-h2);letter-spacing:-.4px;text-wrap:balance}
 
 /* —— About / two-col —— */
 .about__grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.about__facts{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px}
-.fact{background:#fff;border:1px solid var(--g-200);border-radius:var(--r-lg);padding:18px 20px;box-shadow:var(--sh-1)}
-.fact b{font-family:var(--font-head);font-weight:800;font-size:26px;color:var(--ink);display:block;line-height:1.1}
+.about__facts{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px}
+.fact{background:#fff;border:1px solid var(--g-200);border-radius:var(--r-lg);padding:20px;box-shadow:var(--sh-1);
+  display:flex;flex-direction:column;justify-content:center;min-height:118px}
+.fact b{font-family:var(--font-head);font-weight:800;font-size:22px;color:var(--ink);display:block;line-height:1.15}
 .fact span{font-size:13px;color:var(--g-500);margin-top:6px;display:block}
 .fact--link{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;text-decoration:none;transition:border-color .15s ease, box-shadow .15s ease, transform .15s ease}
 .fact--link:hover{border-color:var(--pk-300);box-shadow:var(--sh-2);transform:translateY(-2px)}
@@ -273,7 +274,7 @@ h2.title{font-size:var(--fs-h2);letter-spacing:-.4px;text-wrap:balance}
   :root{--fs-display:40px;--fs-h1:34px;--fs-h2:26px}
   .hero__grid{grid-template-columns:1fr;gap:36px}
   .hero__card{max-width:520px}
-  .about__grid,.grid-4,.steps,.gallery{grid-template-columns:1fr 1fr}
+  .about__grid,.grid-4,.steps,.gallery,.about__facts{grid-template-columns:1fr 1fr}
   .grid-3{grid-template-columns:1fr 1fr}
   .footer__grid{grid-template-columns:1fr 1fr}
   .nav__links{display:none}
@@ -281,7 +282,7 @@ h2.title{font-size:var(--fs-h2);letter-spacing:-.4px;text-wrap:balance}
 }
 @media(max-width:640px){
   .section{padding:var(--space-3xl) 0}
-  .grid-2,.grid-3,.grid-4,.about__grid,.about__facts,.mv,.gallery,.perks,.steps,.hero__stats,.footer__grid{grid-template-columns:1fr}
+  .grid-2,.grid-3,.grid-4,.about__grid,.mv,.gallery,.perks,.steps,.hero__stats,.footer__grid{grid-template-columns:1fr}
   .hero__inner{padding:64px 24px 56px}
   .quote-band{padding:28px 24px}
   .quote-band .q{font-size:21px}
