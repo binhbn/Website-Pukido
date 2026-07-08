@@ -1,0 +1,119 @@
+/* ============================================================
+   Pukido — Design tokens
+   Source of truth: Pukido Design System (Claude Design).
+   Primary brand color is BLUE. 60/30/10 rule:
+   60% light surfaces · 30% Ink Navy · 10% blue + signature gradient.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+  /* —— Blue scale (primary) —— */
+  --pk-50:  #ECF6FF;
+  --pk-100: #D4EAFF;
+  --pk-200: #A9D4FF;
+  --pk-300: #7EBEFF;
+  --pk-400: #4FA8FF;  /* Sky Blue — fills/blocks only, never white text on it */
+  --pk-500: #2E90F5;  /* Pukido Blue — primary accent / CTA */
+  --pk-600: #1E73D6;
+  --pk-700: #1659A8;
+  --pk-800: #114479;
+
+  /* —— Brand anchors —— */
+  --pk-blue:  #2E90F5;
+  --pk-sky:   #4FA8FF;
+  --teal:     #006678;  /* Deep Teal — eyebrows, gradient head */
+  --teal-d:   #004E5C;
+  --ink:      #0D2633;  /* Ink Navy — headings & body text */
+  --slate:    #213A47;  /* secondary text */
+  --surface:  #E1EFF7;  /* Sky Surface — light section background */
+
+  /* —— Neutrals (cool grey, blue-leaning) —— */
+  --white: #FFFFFF;
+  --g-50:  #F7FAFB;
+  --g-100: #EEF2F4;
+  --g-200: #DCE3E7;
+  --g-300: #B9C4CB;
+  --g-400: #8A98A0;
+  --g-500: #5A6B75;
+  --g-700: #3C4D57;
+
+  /* —— Semantic —— */
+  --success: #2BA672;
+  --warning: #E0A100;
+  --danger:  #D64545;
+  --info:    #2E90F5;
+
+  /* —— Signature gradients —— */
+  --grad:      linear-gradient(120deg, #006678 0%, #2E90F5 55%, #4FA8FF 100%);
+  --grad-soft: linear-gradient(120deg, #E1EFF7 0%, #D4EAFF 100%);
+
+  /* —— Semantic aliases —— */
+  --text-heading:  var(--ink);
+  --text-body:     var(--slate);
+  --text-muted:    var(--g-500);
+  --text-eyebrow:  var(--teal);
+  --text-link:     var(--pk-600);
+  --surface-page:  var(--white);
+  --surface-card:  var(--white);
+  --surface-sky:   var(--surface);
+  --border-subtle: var(--g-200);
+  --border-strong: var(--g-300);
+  --accent:        var(--pk-500);
+  --accent-strong: var(--pk-600);
+
+  /* —— Typography —— */
+  --font-head: 'Be Vietnam Pro', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'Space Mono', ui-monospace, monospace;
+
+  --fw-regular: 400;
+  --fw-medium:  500;
+  --fw-semibold:600;
+  --fw-bold:    700;
+  --fw-extra:   800;
+
+  --fs-display: 52px;
+  --fs-h1:      44px;
+  --fs-h2:      30px;
+  --fs-h3:      22px;
+  --fs-h4:      18px;
+  --fs-lead:    19px;
+  --fs-body:    16px;
+  --fs-sm:      14px;
+  --fs-eyebrow: 12px;
+  --fs-caption: 11px;
+
+  --lh-tight: 1.2;
+  --lh-snug:  1.4;
+  --lh-body:  1.6;
+  --ls-tight: -0.5px;
+  --ls-eyebrow: 3px;
+
+  /* —— Spacing (4px base) —— */
+  --space-xs:   4px;
+  --space-sm:   8px;
+  --space-md:   12px;
+  --space-base: 16px;
+  --space-lg:   24px;
+  --space-xl:   32px;
+  --space-2xl:  48px;
+  --space-3xl:  64px;
+  --space-4xl:  96px;
+
+  /* —— Radius —— */
+  --r-sm:   6px;
+  --r-md:   10px;
+  --r-lg:   16px;
+  --r-xl:   24px;
+  --r-pill: 999px;
+
+  /* —— Elevation — soft, ink-tinted shadows —— */
+  --sh-1: 0 1px 2px rgba(13,38,51,.06), 0 1px 3px rgba(13,38,51,.08);
+  --sh-2: 0 4px 12px rgba(13,38,51,.08), 0 2px 4px rgba(13,38,51,.05);
+  --sh-3: 0 12px 32px rgba(13,38,51,.12), 0 4px 8px rgba(13,38,51,.06);
+  --sh-cta: 0 6px 16px rgba(46,144,245,.32);
+
+  /* —— Layout —— */
+  --maxw: 1140px;
+}
